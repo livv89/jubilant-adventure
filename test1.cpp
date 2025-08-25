@@ -3,11 +3,11 @@
  //#include <stdafx.h>
  int main(void)
  {
- 	int age, score; // ì •ìˆ˜ ë³€ìˆ˜ ì„ ì–¸ë¬¸
+ 	int age, score; // Á¤¼ö º¯¼ö ¼±¾ğ¹®
 	  
-	  printf("ë‚˜ì´ê°€ ì–´ë–»ê²Œ ë˜ì„¸ìš”?? : ");
+	  printf("³ªÀÌ°¡ ¾î¶»°Ô µÇ¼¼¿ä? : ");
 	  scanf("%d", &age);
-	  printf("ì ìˆ˜ëŠ”ìš”? : ");
+	  printf("Á¡¼ö´Â¿ä? : ");
 	  scanf("%d", &score);
 
 	  printf("\n\nMy age : %d \n", age);
