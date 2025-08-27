@@ -1,43 +1,43 @@
 #include <stdio.h>
 #include <conio.h>
-
+int key();
 
 int main()
 {
-	char k = getch();
-//	for(;;)
-//	{
-
-		if(47 < k < 58)
+	
+	
+	for(;;)
+	{
+		int k = Key();
+		
+		if(47 < k && k < 58)
 		{
 			k = getch();	
-			printf("%d>4 : 숫자 ", k);
+			printf(">%c : 숫자 \n", k);
 		}
-		else if(64 < k < 91)
+		else if(64 < k && k < 91)
 		{
 			k = getch();
-			printf(">A : 대문자 ", k);
+			printf(">%c : 대문자 \n", k);
 		}
-		else if(96 < k < 123)
+		else if(96 < k && k < 123)
 		{
 			k = getch();
-			printf(">%d a : 소문자 ", k);
+			printf(">%c : 소문자 \n", k);
 		}
 		else
 		{
 			k = getch();
-			printf(">@ : 특수문자 ", k);
+			printf(">%c : 특수문자 \n", k);
 		}
 	
 		
-//	}
+	}
 	
 }
 
-int a()
+int Key() 
 {
-	char k = getch();
-	
-	
+    int a = getch();
+    return a;
 }
-
