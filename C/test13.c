@@ -17,7 +17,7 @@ int eng[] = { 90, 80, 70, 60, 50 };
 int mat[] = { 33, 44, 55, 66, 77 };
 //총점과 등수찍기
 
-int main()
+/*int main()
 { 
   for(int i = 0; i < 10; i++)
   {
@@ -31,4 +31,23 @@ int main()
     }
     printf("%2d  %s  %3d    %3d   %3d\n", i+1, name[i], kor[i], eng[i], mat[i]);
   }
+}*/
+
+void swap(int *i, int *j); //swap func prototype
+int main()
+{
+  int i = 10, j = 20, k;
+  printf("before  i : %d j : %d\n", i, j);
+  swap(&i,&j);
+  printf("after i : %d j : %d\n", i, j);
 }
+
+void swap(int *i, int *j) //void -> 리턴값 없음, 이 함수는 로컬 변수 i,j -> call-by-value(값의 전달에 의한 도출)
+{
+  int k; //k는 포인터 변수일 필요 X
+  printf("  before  i : %d j : %d\n", *i, *j); // "" 안에 들어가는 문자열도 상수
+  k = *i; *i = *j; *j = k;
+  printf("  after i : %d j : %d\n", *i, *j);
+}
+
+
