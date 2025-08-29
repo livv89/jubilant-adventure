@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 
-char *s1 = "Good";
-char *s2 = "Afternoon";
+char s1[] = "Good";
+char s2[] = "Afternoon";
 
 char* ss[2] = { s1, s2 };
 int main()

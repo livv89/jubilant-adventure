@@ -4,7 +4,7 @@ int main()
 {
 	int a = 0x1234;
 	char* pc;
-	int* pi; // int *p ¸»°í int* p ¾²´Â°Ô ÀÇ¹Ì°¡ Á»´õ ¸íÈ®.. 
+	int* pi; // int *p Å¾Â»Â°Ã­ int* p Å¸Â²Å½Ã‚Â°Ã” Ã€Ã‡Â¹ÃŒÂ°Â¡ ÃÂ»Å½Ãµ Å¾Ã­ÃˆÂ®.. 
 	double* pd;
 	printf("&a: %08x %08x\n\n\n", &a, a);
 		
@@ -15,7 +15,7 @@ int main()
 	printf("&a: %08x %08x\n", &a, a);
 	printf("p  : %08x %08x\n", &pi, pi);
 	printf("p  : %08x %08x %08x\n", pi, pc, pd);
-	printf("p+1: %08x %08x %08x\n", ++pi, ++pc, ++pd); //*p == a
+	printf("p+1: %08x %08x %08x\n", pi+1, pc+1, pd+1); //*p == a
 	printf("p+2: %08x %08x %08x\n", pi+2, pc +2, pd +2);
 	
 }
